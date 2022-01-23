@@ -1,0 +1,50 @@
+@keyframes title {
+    from {opacity: 0.5;}
+    to {}
+}
+
+@keyframes marginTick {
+    from {opacity: 0.5; margin-top: 30vh}
+    to {}
+}
+
+@keyframes mot3 {
+    from {opacity: 0.5; margin-top: 5vh}
+    to {}
+}
+
+.motion1 {
+    animation-iteration-count: 1;
+    animation-name: marginTick;
+    animation-duration: 1.5s;
+}
+
+.motion2 {
+    animation-iteration-count: 1;
+    animation-name: title;
+    animation-duration: 1.5s;
+}
+
+.motion3 {
+    animation-iteration-count: 1;
+    animation-name: mot3;
+    animation-duration: 1.2s;
+}
+
+.motion4 {
+    animation-iteration-count: 1;
+    animation-name: marginTick;
+    animation-duration: 1.5s;
+}
+
+.motion5 {
+    animation-iteration-count: 1;
+    animation-name: title;
+    animation-duration: 1.2s;
+}
+
+.motion6 {
+    animation-iteration-count: 1;
+    animation-name: mot3;
+    animation-duration: 1.5s;
+}
