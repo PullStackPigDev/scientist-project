@@ -11,7 +11,7 @@ export function Footer() {
             <Flex width="98%" height="100%" flexWrap="wrap" justifyContent="space-between">
                 <Flex maxWidth="100%" height="100%" flexDir="column-reverse" flexWrap="wrap">
                     <Text paddingBottom={2} paddingLeft={2}>
-                        © 2021 Copyright All Rights Served
+                        © 2022 Copyright All Rights Served
                     </Text>
                 </Flex>
                 <Flex maxWidth="100%" height="100%" flexDir="column-reverse" flexWrap="wrap">
