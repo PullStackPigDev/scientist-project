@@ -7,7 +7,7 @@ import Image from "next/image"
 
 const NavBarTxt = ({txt, onClick}: {txt: string, onClick: any}) => {
     return (
-        <Text color="#ffffff" marginLeft="12" marginRight="12" css={{fontSize: "1.5em"}} onClick={onClick} className="nav-link">
+        <Text color="#ffffff" marginLeft="12" marginRight="12" css={{fontSize: "1.535vw"}} onClick={onClick} className="nav-link">
             {txt}
         </Text>
     )
