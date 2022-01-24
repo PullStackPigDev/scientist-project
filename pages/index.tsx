@@ -64,7 +64,7 @@ const Home: NextPage = () => {
               </b>
             </Text>
             <Flex>
-              <Text width="55%" fontSize="1.535vw" paddingRight={100} lineHeight="5vh">
+              <Text width="55%" fontSize="1.535vw" paddingRight={100} lineHeight="4vh">
                 {/* 1.5em */}
                 &emsp;&emsp;&emsp;Ernest Armstrong McCulloch is a Canadian hematologist known for his discovery of haematopoietic stem cells (HSC). Ernest Armstrong McCulloch was born in Toronto, Ontario on 21 April 1926. His parents were comparatively well off and he enjoyed a privileged upbringing. Ernest had a nickname “Bun”, or “Bunny”. Mainly because he didn’t really like his first name. For education, Ernest went to Upper Canada College for High School, and had his university in University of Toronto. In 1957, Ernest joined the Ontario Cancer Institude. In 1974, he became an official member of the Royal Society of Canada. And in 2011, he passed away, death factor unknown.
               </Text>
@@ -116,7 +116,7 @@ const Home: NextPage = () => {
                   Discrete, macroscopic nodules had developed on the spleen surface in surviving mice
                 </Text>
               </Flex>
-              <Text width="55%" fontSize="1.285vw" paddingLeft={100} lineHeight="4vh">
+              <Text width="55%" fontSize="1.285vw" paddingLeft={100} lineHeight="3.2vh">
                 {/* 1.25em */}
                 &emsp;&emsp;&emsp;In 1961, at the University of Toronto and the Ontario Cancer Institude. There came the discovery of hemtaopoietic stem cells. Ernest and Till found out that the number of nodules appearing on the spleen was directly proportional to the number of bone marrow cells originally injected into the lethally irradiated recipient. They called it “colony-forming units”. Then, with the help of a graduate student of Till’s Andrew Becker, who proved their findings. After several more experiments, more of stem cells’ characteristics were found, including self-renewal, process of cellular differentiation, etc. Their work led to revolutionary treatments for a lot of blood diseases such as leukemia, anemia and immunodeficiencies. This achievement also led to the awards and prizes. They won the Gairdner award in 1969, they were made Officers of the Order of Canada in 1988, inducted into the Canadian Medical Hall of Fame in 2004 and earned an Albert Lasker Award in 2005, a top U.S. medical research prize. The only pity is that they did not receive a Nobel prize for such an accomplishment. 
               </Text>
