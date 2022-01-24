@@ -100,7 +100,7 @@ const Home: NextPage = () => {
         </Text>
       </div>
       <div style={{width: '100vw', height: '100vh', position: 'relative' }}>
-        <Flex alignItems="start" justifyContent="start" flexDir="column" height="100%">
+        <Flex alignItems="start" justifyContent="start" flexDir="column" height="100%" flexWrap="wrap">
           <div style={{padding: "6.035vw"}} className={scc}>
             <Text fontSize="4.535vw" paddingBottom="0.535vw" textAlign="center">
               {/* 4.5em */}
@@ -108,8 +108,8 @@ const Home: NextPage = () => {
                 Stem Cells, the “colony-forming units”
               </b>
             </Text>
-            <Flex>
-              <Flex flexDir={"column"} textAlign="center">
+            <Flex flexWrap="wrap">
+              <Flex flexDir={"column"} textAlign="center" flexWrap="wrap">
                 <Image src="/stem.svg" alt="Profile" width={500} height={500} placeholder="blur" blurDataURL='/stem.svg' />
                 <Text paddingTop="1vh" fontSize="0.635vw">
                   {/* 0.6em */}
