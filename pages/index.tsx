@@ -39,7 +39,7 @@ const Home: NextPage = () => {
           <Text color="#ffffff" fontSize="4.535vw" zIndex={1} className="motion1">
             {/* 4.5em */}
             <b style={{
-              letterSpacing: "0.01em",
+              letterSpacing: "0.01vw",
             }}>
               Meet Ernest Armstrong McCulloch
             </b>
@@ -56,8 +56,8 @@ const Home: NextPage = () => {
       </main>
       <div style={{width: '100vw', height: '100vh', position: 'relative' }}>
         <Flex alignItems="start" justifyContent="start" flexDir="column" height="100%">
-          <div style={{padding: "6em"}} className={scr}>
-            <Text fontSize="4.535vw" paddingBottom="0.5em">
+          <div style={{padding: "6.035vw"}} className={scr}>
+            <Text fontSize="4.535vw" paddingBottom="0.535vw">
               {/* 4.5em */}
               <b>
                 Father of Stem Cell Research
@@ -84,7 +84,7 @@ const Home: NextPage = () => {
           <Text color="#ffffff" fontSize="4.535vw" zIndex={1} className={hsc[0]} marginTop="25vh">
             {/* 4.5em */}
             <b style={{
-              letterSpacing: "0.01em"
+              letterSpacing: "0.01vw"
             }}>
               The Discovery of hematopoietic stem cells
             </b>
@@ -101,8 +101,8 @@ const Home: NextPage = () => {
       </div>
       <div style={{width: '100vw', height: '100vh', position: 'relative' }}>
         <Flex alignItems="start" justifyContent="start" flexDir="column" height="100%">
-          <div style={{padding: "6em"}} className={scc}>
-            <Text fontSize="4.535vw" paddingBottom="0.5em" textAlign="center">
+          <div style={{padding: "6.035vw"}} className={scc}>
+            <Text fontSize="4.535vw" paddingBottom="0.535vw" textAlign="center">
               {/* 4.5em */}
               <b>
                 Stem Cells, the “colony-forming units”
@@ -126,8 +126,8 @@ const Home: NextPage = () => {
       </div>
       <div style={{width: '100vw', height: '100vh', position: 'relative' }}>
         <Flex alignItems="start" justifyContent="space-between" flexDir="column" height="100%">
-          <div style={{padding: "6em", maxWidth: "100%"}}>
-            <Text fontSize="4.535vw" paddingBottom="0.5em" textAlign="center">
+          <div style={{padding: "6.035vw", maxWidth: "100%"}}>
+            <Text fontSize="4.535vw" paddingBottom="0.535vw" textAlign="center">
               {/* 4.5em */}
               <b>
                 References & Resources used
