@@ -36,7 +36,7 @@ const Home: NextPage = () => {
       <main style={{width: '100vw', height: '100vh', position: 'relative' }}>
         <Image src="/mainBg.svg" layout="fill" objectFit="cover" alt="bgImg" placeholder="blur" blurDataURL='/mainBg.svg' />
         <Flex alignItems="center" justifyContent="center" flexDir="column" height="100%">
-          <Text color="#ffffff" fontSize="4.535em" zIndex={1} className="motion1">
+          <Text color="#ffffff" fontSize="4.535vw" zIndex={1} className="motion1">
             {/* 4.5em */}
             <b style={{
               letterSpacing: "0.01em",
