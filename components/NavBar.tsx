@@ -7,7 +7,7 @@ import Image from "next/image"
 
 const NavBarTxt = ({txt, onClick}: {txt: string, onClick: any}) => {
     return (
-        <Text color="#ffffff" marginLeft="12" marginRight="12" css={{fontSize: "1.5em"}} onClick={onClick}>
+        <Text color="#ffffff" marginLeft="12" marginRight="12" css={{fontSize: "1.5em"}} onClick={onClick} className="nav-link">
             {txt}
         </Text>
     )
@@ -37,7 +37,7 @@ const NavBar = () => {
                     <NavBarTxt txt={"Home"} onClick={() => window.scrollTo(0, 0)} />
                     <NavBarTxt txt={"About"} onClick={() => window.scrollTo(0, 817)}/>
                     <NavBarTxt txt={"Stem Cells"} onClick={() => window.scrollTo(0, 1634)}/>
-                    <NavBarTxt txt={"Resources"} onClick={() => window.scrollTo(0, 2451)}/>
+                    <NavBarTxt txt={"Resources"} onClick={() => window.scrollTo(0, 3260)}/>
                 </Flex>
             </Flex>
         </Box>

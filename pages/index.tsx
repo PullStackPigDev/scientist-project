@@ -6,6 +6,8 @@ import {
   Text,
   Flex
 } from '@chakra-ui/react'
+import { ReferenceCard } from '../components/ReferenceCard'
+import { Footer } from '../components/footer'
 
 const Home: NextPage = () => {
   const [scr, setScr] = React.useState<string>("")
@@ -32,7 +34,7 @@ const Home: NextPage = () => {
     <div style={{overflow: "hidden"}}>
       <NavBar />
       <main style={{width: '100vw', height: '100vh', position: 'relative' }}>
-        <Image src="/mainBg.svg" layout="fill" objectFit="cover" alt="bgImg" />
+        <Image src="/mainBg.svg" layout="fill" objectFit="cover" alt="bgImg" placeholder="blur" blurDataURL='/mainBg.svg' />
         <Flex alignItems="center" justifyContent="center" flexDir="column" height="100%">
           <Text color="#ffffff" fontSize="4.5em" zIndex={1} className="motion1">
             <b style={{
@@ -45,6 +47,9 @@ const Home: NextPage = () => {
             The Canadian Hematologist That Discovered Stem Cells
           </Text>
         </Flex>
+        <Text position="absolute" bottom="0" right="5" color="white" fontSize="0.5em">
+          Dr Ernest A. McCulloch drawing on a blackboard
+        </Text>
       </main>
       <div style={{width: '100vw', height: '100vh', position: 'relative' }}>
         <Flex alignItems="start" justifyContent="start" flexDir="column" height="100%">
@@ -59,7 +64,7 @@ const Home: NextPage = () => {
                 &emsp;&emsp;&emsp;Ernest Armstrong McCulloch is a Canadian hematologist known for his discovery of haematopoietic stem cells (HSC). Ernest Armstrong McCulloch was born in Toronto, Ontario on 21 April 1926. His parents were comparatively well off and he enjoyed a privileged upbringing. Ernest had a nickname “Bun”, or “Bunny”. Mainly because he didn’t really like his first name. For education, Ernest went to Upper Canada College for High School, and had his university in University of Toronto. In 1957, Ernest joined the Ontario Cancer Institude. In 1974, he became an official member of the Royal Society of Canada. And in 2011, he passed away, death factor unknown.
               </Text>
               <Flex flexDir={"column"} textAlign="center">
-                <Image src="/profile.svg" alt="Profile" width={500} height={500} />
+                <Image src="/profile.svg" alt="Profile" width={500} height={500} placeholder="blur" blurDataURL='/profile.svg' />
                 <Text paddingTop="1vh">
                   Dr. Ernest A. McCulloch in 2005.
                 </Text>
@@ -68,10 +73,10 @@ const Home: NextPage = () => {
           </div>
         </Flex>
       </div>
-      <div style={{ width: '100vw', height: '100vh', position: 'relative' }}>
-        <Image src="/mainBg2.svg" layout="fill" objectFit="cover" alt="bgImg" />
+      <div style={{ width: '100vw', height: '110vh', position: 'relative' }}>
+        <Image src="/mainBg3.svg" layout="fill" objectFit="cover" alt="bgImg" placeholder="blur" blurDataURL='/mainBg3.svg' />
         <Flex alignItems="center" justifyContent="center" flexDir="column" height="100%">
-          <Text color="#ffffff" fontSize="4.5em" zIndex={1} className={hsc[0]}>
+          <Text color="#ffffff" fontSize="4.5em" zIndex={1} className={hsc[0]} marginTop="25vh">
             <b style={{
               letterSpacing: "0.01em"
             }}>
@@ -82,6 +87,9 @@ const Home: NextPage = () => {
             with Ernest and James Till
           </Text>
         </Flex>
+        <Text position="absolute" bottom="0" right="5" color="white" fontSize="0.5em">
+          Drs Ernest & Till standing together
+        </Text>
       </div>
       <div style={{width: '100vw', height: '100vh', position: 'relative' }}>
         <Flex alignItems="start" justifyContent="start" flexDir="column" height="100%">
@@ -93,7 +101,7 @@ const Home: NextPage = () => {
             </Text>
             <Flex>
               <Flex flexDir={"column"} textAlign="center">
-                <Image src="/stem.svg" alt="Profile" width={500} height={500} />
+                <Image src="/stem.svg" alt="Profile" width={500} height={500} placeholder="blur" blurDataURL='/stem.svg' />
                 <Text paddingTop="1vh" fontSize="0.6em">
                   Discrete, macroscopic nodules had developed on the spleen surface in surviving mice
                 </Text>
@@ -103,6 +111,42 @@ const Home: NextPage = () => {
               </Text>
             </Flex>
           </div>
+        </Flex>
+      </div>
+      <div style={{width: '100vw', height: '100vh', position: 'relative' }}>
+        <Flex alignItems="start" justifyContent="space-between" flexDir="column" height="100%">
+          <div style={{padding: "6em", maxWidth: "100%"}}>
+            <Text fontSize="4.5em" paddingBottom="0.5em" textAlign="center">
+              <b>
+                References & Resources used
+              </b>
+            </Text>
+            <Flex maxWidth="100%" height="75%" flexDir={"column"} textAlign="center" flexWrap="wrap" wrap="wrap" justifyContent="space-between">
+              <Flex maxWidth="100%" flexDir="row" justifyContent="space-between" flexWrap="wrap" wrap="wrap">
+                <ReferenceCard content={`
+                  Mak, T. W. (2017, August 30). Ernest Armstrong McCulloch. 21 April 1926—20
+                  January 2011. THE ROYAL SOCIETY PUBLISHING. Retrieved January 23, 2022,
+                  from
+                `} from="https://royalsocietypublishing.org/doi/10.1098/rsbm.2017.0019" />
+                <ReferenceCard content={`
+                  ​​Globe & Mail [Toronto, Canada]. (2011, January 29). Scientist was pioneer in
+                  stem cell research. GALE IN CONTEXT Canada. Retrieved January 23, 2022,
+                  from 
+                `} from="https://go.gale.com/ps/retrieve.do?tabID=News&resultListType=RESULT_LIST&searchResultsType=MultiTab&hitCount=3&searchType=BasicSearchForm&currentPosition=1&docId=GALE%7CA247812726&docType=Obituary&sort=Relevance&contentSegment=ZXAS-MOD1&prodId=CIC&pageNum=1&contentSet=GALE%7CA247812726&searchId=R3&userGroupName=ko_k12hs_d24&inPS=true" />
+              </Flex>
+              <Flex maxWidth="100%" flexDir="row" justifyContent="space-between" flexWrap="wrap" wrap="wrap">
+                <ReferenceCard content={`
+                  Bains, A. (2020, November 20). James Edgar Till (1931– ). The Embryo Project
+                  Encyclopedia. Retrieved January 23, 2022, from
+                `} from="https://embryo.asu.edu/pages/james-edgar-till-1931" extend />
+                <ReferenceCard content={`
+                  Ogilvie, M. (2009, October 11). McCulloch, Ernest Armstrong. UNIVERSITY OF
+                  TORONTO DISCOVER ARCHIVES. Retrieved January 23, 2022, from
+                `} from="https://discoverarchives.library.utoronto.ca/index.php/mcculloch-ernest-armstrong" extend />
+              </Flex>
+            </Flex>
+          </div>
+          <Footer />
         </Flex>
       </div>
     </div>

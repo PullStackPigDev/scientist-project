@@ -48,3 +48,16 @@
     animation-name: mot3;
     animation-duration: 1.5s;
 }
+
+.nav-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.pointer-hover:hover {
+    cursor: pointer
+}
+
+.underline-hover:hover {
+    text-decoration: underline;
+}
