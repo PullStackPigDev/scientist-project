@@ -13,7 +13,9 @@ const Home: NextPage = () => {
   const [scr, setScr] = React.useState<string>("")
   const [hsc, setHsc] = React.useState<Array<string>>(["", ""])
   const [scc, setScc] = React.useState<string>("")
+  const [mots, SetMots] = React.useState<Array<string>>(["", ""])
   function GetProp() {
+    SetMots(["motion1", "motion2"])
     if (window.scrollY > 120 && window.scrollY < 1634) {
       setScr("motion3")
     }
@@ -36,21 +38,18 @@ const Home: NextPage = () => {
       <main style={{width: '100vw', height: '100vh', position: 'relative' }}>
         <Image src="/mainBg.svg" layout="fill" objectFit="cover" alt="bgImg" placeholder="blur" blurDataURL='/mainBg.svg' />
         <Flex alignItems="center" justifyContent="center" flexDir="column" height="100%">
-          <Text color="#ffffff" fontSize="4.535vw" zIndex={1} className="motion1">
-            {/* 4.5em */}
+          <Text color="#ffffff" fontSize="4.535vw" zIndex={1} className={mots[0]}>
             <b style={{
               letterSpacing: "0.01vw",
             }}>
               Meet Ernest Armstrong McCulloch
             </b>
           </Text>
-          <Text color="#ffffff" fontSize="1.835vw" zIndex={1} className="motion2">
-            {/* 1.8em */}
+          <Text color="#ffffff" fontSize="1.835vw" zIndex={1} className={mots[1]}>
             The Canadian Hematologist That Discovered Stem Cells
           </Text>
         </Flex>
         <Text position="absolute" bottom="0" right="5" color="white" fontSize="0.535vw">
-          {/* 0.5em */}
           Dr Ernest A. McCulloch drawing on a blackboard
         </Text>
       </main>
@@ -58,14 +57,12 @@ const Home: NextPage = () => {
         <Flex alignItems="start" justifyContent="start" flexDir="column" height="100%">
           <div style={{padding: "6.035vw"}} className={scr}>
             <Text fontSize="4.535vw" paddingBottom="0.535vw">
-              {/* 4.5em */}
               <b>
                 Father of Stem Cell Research
               </b>
             </Text>
             <Flex>
-              <Text width="55%" fontSize="1.535vw" paddingRight={100} lineHeight="4vh">
-                {/* 1.5em */}
+              <Text width="60%" fontSize="1.535vw" paddingRight={100} lineHeight="5vh">
                 &emsp;&emsp;&emsp;Ernest Armstrong McCulloch is a Canadian hematologist known for his discovery of haematopoietic stem cells (HSC). Ernest Armstrong McCulloch was born in Toronto, Ontario on 21 April 1926. His parents were comparatively well off and he enjoyed a privileged upbringing. Ernest had a nickname “Bun”, or “Bunny”. Mainly because he didn’t really like his first name. For education, Ernest went to Upper Canada College for High School, and had his university in University of Toronto. In 1957, Ernest joined the Ontario Cancer Institude. In 1974, he became an official member of the Royal Society of Canada. And in 2011, he passed away, death factor unknown.
               </Text>
               <Flex flexDir={"column"} textAlign="center">
@@ -82,7 +79,6 @@ const Home: NextPage = () => {
         <Image src="/mainBg3.svg" layout="fill" objectFit="cover" alt="bgImg" placeholder="blur" blurDataURL='/mainBg3.svg' />
         <Flex alignItems="center" justifyContent="center" flexDir="column" height="100%">
           <Text color="#ffffff" fontSize="4.535vw" zIndex={1} className={hsc[0]} marginTop="25vh">
-            {/* 4.5em */}
             <b style={{
               letterSpacing: "0.01vw"
             }}>
@@ -90,34 +86,29 @@ const Home: NextPage = () => {
             </b>
           </Text>
           <Text color="#ffffff" fontSize="2.535vw" zIndex={1} className={hsc[1]}>
-            {/* 2.5em */}
             with Ernest and James Till
           </Text>
         </Flex>
         <Text position="absolute" bottom="0" right="5" color="white" fontSize="0.535vw">
-          {/* 0.5em */}
           Drs Ernest & Till standing together
         </Text>
       </div>
       <div style={{width: '100vw', height: '100vh', position: 'relative' }}>
         <Flex alignItems="start" justifyContent="start" flexDir="column" height="100%" flexWrap="wrap">
-          <div style={{padding: "6.035vw"}} className={scc}>
-            <Text fontSize="4.535vw" paddingBottom="0.535vw" textAlign="center">
-              {/* 4.5em */}
+          <div style={{paddingLeft: "6.035vw", paddingRight: "6.035vw", paddingTop: "14.035vh", paddingBottom: "14.035vh"}} className={scc}>
+            <Text fontSize="4.535vw" paddingBottom="5vh" textAlign="center">
               <b>
                 Stem Cells, the “colony-forming units”
               </b>
             </Text>
-            <Flex flexWrap="wrap">
+            <Flex>
               <Flex flexDir={"column"} textAlign="center" flexWrap="wrap">
                 <Image src="/stem.svg" alt="Profile" width={500} height={500} placeholder="blur" blurDataURL='/stem.svg' />
-                <Text paddingTop="1vh" fontSize="0.635vw">
-                  {/* 0.6em */}
+                <Text paddingTop="3vh" fontSize="0.635vw">
                   Discrete, macroscopic nodules had developed on the spleen surface in surviving mice
                 </Text>
               </Flex>
-              <Text width="55%" fontSize="1.285vw" paddingLeft={100} lineHeight="3.2vh">
-                {/* 1.25em */}
+              <Text width="55%" fontSize="1.475vw" paddingLeft="5vw" lineHeight="3.2vh">
                 &emsp;&emsp;&emsp;In 1961, at the University of Toronto and the Ontario Cancer Institude. There came the discovery of hemtaopoietic stem cells. Ernest and Till found out that the number of nodules appearing on the spleen was directly proportional to the number of bone marrow cells originally injected into the lethally irradiated recipient. They called it “colony-forming units”. Then, with the help of a graduate student of Till’s Andrew Becker, who proved their findings. After several more experiments, more of stem cells’ characteristics were found, including self-renewal, process of cellular differentiation, etc. Their work led to revolutionary treatments for a lot of blood diseases such as leukemia, anemia and immunodeficiencies. This achievement also led to the awards and prizes. They won the Gairdner award in 1969, they were made Officers of the Order of Canada in 1988, inducted into the Canadian Medical Hall of Fame in 2004 and earned an Albert Lasker Award in 2005, a top U.S. medical research prize. The only pity is that they did not receive a Nobel prize for such an accomplishment. 
               </Text>
             </Flex>
@@ -128,12 +119,11 @@ const Home: NextPage = () => {
         <Flex alignItems="start" justifyContent="space-between" flexDir="column" height="100%">
           <div style={{padding: "6.035vw", maxWidth: "100%"}}>
             <Text fontSize="4.535vw" paddingBottom="0.535vw" textAlign="center">
-              {/* 4.5em */}
               <b>
                 References & Resources used
               </b>
             </Text>
-            <Flex maxWidth="100%" height="75%" flexDir={"column"} textAlign="center" flexWrap="wrap" wrap="wrap" justifyContent="space-between">
+            <Flex maxWidth="100%" height="90%" flexDir={"column"} textAlign="center" flexWrap="wrap" wrap="wrap" justifyContent="space-between">
               <Flex maxWidth="100%" flexDir="row" justifyContent="space-between" flexWrap="wrap" wrap="wrap">
                 <ReferenceCard content={`
                   Mak, T. W. (2017, August 30). Ernest Armstrong McCulloch. 21 April 1926—20
@@ -158,7 +148,9 @@ const Home: NextPage = () => {
               </Flex>
             </Flex>
           </div>
-          <Footer />
+          <Footer reload={() => {
+            setScr(""); setHsc(["", ""]); setScc(""); SetMots(["", ""]);
+          }} />
         </Flex>
       </div>
     </div>
