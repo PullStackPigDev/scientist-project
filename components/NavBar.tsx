@@ -37,7 +37,7 @@ const NavBar = () => {
                     <NavBarTxt txt={"Home"} onClick={() => window.scrollTo(0, 0)} />
                     <NavBarTxt txt={"About"} onClick={() => window.scrollTo(0, 762)}/>
                     <NavBarTxt txt={"Stem Cells"} onClick={() => window.scrollTo(0, 1602)}/>
-                    <NavBarTxt txt={"Resources"} onClick={() => window.scrollTo(0, 3149)}/>
+                    <NavBarTxt txt={"Resources"} onClick={() => window.scrollTo(0, 9999)}/>
                 </Flex>
             </Flex>
         </Box>
