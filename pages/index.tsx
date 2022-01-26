@@ -66,7 +66,7 @@ const Home: NextPage = () => {
                 &emsp;&emsp;&emsp;Ernest Armstrong McCulloch is a Canadian hematologist known for his discovery of haematopoietic stem cells (HSC). Ernest Armstrong McCulloch was born in Toronto, Ontario on 21 April 1926. His parents were comparatively well off and he enjoyed a privileged upbringing. Ernest had a nickname “Bun”, or “Bunny”. Mainly because he didn’t really like his first name. For education, Ernest went to Upper Canada College for High School, and had his university in University of Toronto. In 1957, Ernest joined the Ontario Cancer Institude. In 1974, he became an official member of the Royal Society of Canada. And in 2011, he passed away, death factor unknown.
               </Text>
               <Flex flexDir={"column"} textAlign="center">
-                <Image src="/profile.svg" alt="Profile" width={400} height={400} placeholder="blur" blurDataURL='/profile.svg' />
+                <Image src="/profile.svg" alt="Profile" width="400vw" height="400vh" placeholder="blur" blurDataURL='/profile.svg' />
                 <Text paddingTop="1vh">
                   Dr. Ernest A. McCulloch in 2005.
                 </Text>
@@ -123,7 +123,7 @@ const Home: NextPage = () => {
                 References & Resources used
               </b>
             </Text>
-            <Flex marginTop="5vh" maxWidth="100%" height="75vh" flexDir={"column"} textAlign="center" flexWrap="wrap" wrap="wrap" justifyContent="space-between">
+            <Flex marginTop="5vh" maxWidth="100%" height="85vh" flexDir={"column"} textAlign="center" flexWrap="wrap" wrap="wrap" justifyContent="space-between">
               <Flex maxWidth="100%" flexDir="row" justifyContent="space-between" flexWrap="wrap" wrap="wrap">
                 <ReferenceCard content={`
                   Mak, T. W. (2017, August 30). Ernest Armstrong McCulloch. 21 April 1926—20
