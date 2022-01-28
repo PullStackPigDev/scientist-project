@@ -123,7 +123,7 @@ const Home: NextPage = () => {
                 References & Resources used
               </b>
             </Text>
-            <Flex marginTop="5vh" maxWidth="100%" height="95vh" flexDir={"column"} textAlign="center" flexWrap="wrap" wrap="wrap" justifyContent="space-between">
+            <Flex marginTop="5vh" maxWidth="100%" height="75vh" flexDir={"column"} textAlign="center" flexWrap="wrap" wrap="wrap" justifyContent="space-between">
               <Flex maxWidth="100%" flexDir="row" justifyContent="space-between" flexWrap="wrap" wrap="wrap">
                 <ReferenceCard content={`
                   Mak, T. W. (2017, August 30). Ernest Armstrong McCulloch. 21 April 1926—20
